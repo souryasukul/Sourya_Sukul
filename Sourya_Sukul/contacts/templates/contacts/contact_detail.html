@@ -1,0 +1,11 @@
+{% extends 'contacts/base.html' %}
+
+{% block title %}Contact Detail{% endblock %}
+{% block header %}Contact Detail{% endblock %}
+
+{% block content %}
+    <h3>Contact Name: {{ contact.contact_name }}</h3>
+    <p>Email: {{ contact.email }}</p>
+    <p>Created Time: {{ contact.created_time }}</p>
+    <a href="{% url 'contact_list' %}">Back to Contact List</a>
+{% endblock %}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Contact Management{% endblock %}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2 style="color: blue; text-align: center;">{% block header %}{% endblock %}</h2>
+        {% block content %}{% endblock %}
+        <div style="text-align: center; margin-top: 20px; color: green;">
+            &copy;Created by Sourya Sukul
+        </div>
+    </div>
+</body>
+</html>
